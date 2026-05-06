@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario Mejorado</title>
+  <link rel="stylesheet" href="https://bulma.io/">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body style="background: #f5f7fa;">
+
+<section class="section">
+  <div class="container">
     
+    <div class="card">
+      <div class="card-content">
+        <h1 class="title has-text-centered has-text-primary">
+          Registro de Usuario
+        </h1>
+
+        <form>
+
+          <div class="columns is-multiline">
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Nombre completo</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="">
+                  <span class="icon is-left"><i class="fas fa-user"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Teléfono</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="tel" placeholder="">
+                  <span class="icon is-left"><i class="fas fa-phone"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dirección -->
+            <div class="column is-full">
+              <div class="field">
+                <label class="label">Dirección</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="">
+                  <span class="icon is-left"><i class="fas fa-home"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="correo@email.com">
+                  <span class="icon is-left"><i class="fas fa-envelope"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="password" placeholder="***">
+                  <span class="icon is-left"><i class="fas fa-lock"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Fecha de nacimiento</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="date">
+                  <span class="icon is-left"><i class="fas fa-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Documento</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Número de documento">
+                  <span class="icon is-left"><i class="fas fa-id-card"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Estado civil</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select>
+                      <option>Seleccione</option>
+                      <option>Soltero/a</option>
+                      <option>Casado/a</option>
+                      <option>Divorciado/a</option>
+                      <option>Viudo/a</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Rol</label>
+                <div class="control has-icons-left">
+                  <input class="input" list="roles" placeholder="Escriba o seleccione un rol">
+                  <datalist id="roles">
+                    <option value="Usuario">
+                    <option value="Administrador">
+                    <option value="Editor">
+                    <option value="Invitado">
+                  </datalist>
+                  <span class="icon is-left"><i class="fas fa-user-tag"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Género</label>
+                <div class="control">
+                  <label class="radio"><input type="radio" name="genero"> Masculino</label>
+                  <label class="radio"><input type="radio" name="genero"> Femenino</label>
+                  <label class="radio"><input type="radio" name="genero"> Otro</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Profesión</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Profesión">
+                  <span class="icon is-left"><i class="fas fa-briefcase"></i></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+         
+          <div class="field mt-5">
+            <div class="control has-text-centered">
+              <button class="button is-primary is-medium is-rounded">
+                <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                <span>Enviar</span>
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>
